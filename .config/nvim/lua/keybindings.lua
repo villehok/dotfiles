@@ -1,10 +1,17 @@
 -- jk works as <Esc> in insert mode 
 vim.keymap.set('i', 'jk', '<Esc>')
 
+-- Move cursor in <Inser> mode
+vim.keymap.set('i', '<C-h>', '<Esc>i')
+vim.keymap.set('i', '<C-k>', '<Esc><Up>a')
+vim.keymap.set('i', '<C-j>', '<Esc><Down>a')
+vim.keymap.set('i', '<C-l>', '<Esc><Right>a')
+
 -- save, quit, force quit and restart
 vim.keymap.set('n', '<leader>w', ':w<cr>')
-vim.keymap.set('n', '<leader>q', ':wqa<cr>')
-vim.keymap.set('n', '<leader>q', ':q!<cr>')
+vim.keymap.set('n', '<leader>W', ':wa<cr>')
+vim.keymap.set('n', '<leader>q', ':q<cr>')
+vim.keymap.set('n', '<leader>Q', ':qa!<cr>')
 vim.keymap.set('n', '<leader><f5>', ':restart<cr>')
 
 -- Yank to end of the line

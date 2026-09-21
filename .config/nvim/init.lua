@@ -15,6 +15,8 @@ vim.pack.add({
 require('options')
 require('keybindings')
 require('autocommands')
+require('find')
+require('grep')
 require('colorscheme')
 require('statusline')
 
